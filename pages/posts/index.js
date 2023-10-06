@@ -14,6 +14,9 @@ export default function PostList(props) {
   return (
     <Layout>
       <h1>Posts</h1>
+      <>
+      {JSON.stringify(data)}
+      </>
       <div>
         {postsList.map((post) => (
           <div key={post.node.id}>
