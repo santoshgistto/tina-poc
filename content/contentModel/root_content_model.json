@@ -1,0 +1,35 @@
+{
+  "label": "Toot Content Model",
+  "collections": [
+    {
+      "label": "Fonts",
+      "name": "fonts",
+      "path": "content/fonts",
+      "fields": [
+        {
+          "type": "string",
+          "name": "fontName",
+          "label": "Font Name",
+          "required": true,
+          "_template": "feilds"
+        }
+      ],
+      "_template": "collections"
+    },
+    {
+      "label": "Icons",
+      "name": "icons",
+      "path": "content/icons",
+      "fields": [
+        {
+          "type": "image",
+          "name": "icon",
+          "label": "Icon",
+          "required": true,
+          "_template": "feilds"
+        }
+      ],
+      "_template": "collections"
+    }
+  ]
+}

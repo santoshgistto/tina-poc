@@ -1,9 +1,15 @@
 import { defineConfig, defineSchema } from "tinacms";
-import { ContentModel } from "./schema/contentModel";
+import { MainContentModel } from "./schema/mainContentModel";
+
+//    const content = window.localStorage.getItem(LOCAL_STORAGE_CONTENT_KEY);
+//  window.localStorage.setItem( LOCAL_STORAGE_CONTENT_KEY,JSON.stringify(storySaveData)
+
+import root_content_model from '../content/contentModel/root_content_model.json'
 
 const schema = defineSchema({
   collections: [
-    ContentModel 
+    MainContentModel,
+    ...root_content_model.collections,
   ],
 });
 

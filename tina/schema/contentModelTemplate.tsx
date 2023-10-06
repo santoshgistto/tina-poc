@@ -2,7 +2,7 @@ import { TinaTemplate } from "@tinacms/cli";
 import commonFeildsTemplate from "./contentModelSchema/commonFieldTemplate";
 import referenceTemplate from "./contentModelSchema/referenceTemplate";
 
-const ContentModel: TinaTemplate = {
+const contentModelTemplate: TinaTemplate = {
     name: "collections",
     label: "ADD CONTENT TYPE",
     ui: {
@@ -44,4 +44,4 @@ const ContentModel: TinaTemplate = {
 
     ]
 }
-export default ContentModel;
+export default contentModelTemplate;
